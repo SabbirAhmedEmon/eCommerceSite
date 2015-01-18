@@ -1,0 +1,84 @@
+﻿@model IEnumerable<eCommerceSite.Models.MensProduct>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MensProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MensProductId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MensProductId })
+        </td>
+    </tr>
+}
+
+</table>*@
+
+<table>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="http://localhost:1634/mens/M001Details" class="warning">
+                    <img src="~/images/001.jpg" height="150" class="img-thumbnail" alt="Responsive image">
+                </a>
+                @*<img src="~/images/001.jpg" />*@
+                <div class="caption">
+                    <h3>White Blazer</h3>
+                    <h3>Code M001 </h3>
+                    <h4>This product Imported from India </h4>
+                    <p> <h2 class="alert-success">Price 3000 Taka</h2></p>
+                    <p><a href="http://localhost:1634/mens/M001Details" class="btn btn-primary" role="button">View Details</a> <a href="http://localhost:1634/Order/Create" class="btn btn-default" role="button">Click for Order</a></p>
+                </div>
+            </div>
+            Please Copy the Product Code for order
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="~/images/002.jpg" class="warning">
+                    <img src="~/images/002.jpg" height="150" class="img-thumbnail" alt="Responsive image">
+                </a>
+                @*<img src="~/images/001.jpg" />*@
+                <div class="caption">
+                    <h3>White Blazer</h3>
+                    <h3>Code M001 </h3>
+                    <h4>This product Imported from India </h4>
+                    <p> <h2 class="alert-success">Price 3000 Taka</h2></p>
+                    <p><a href="http://localhost:1634/mens/M002Details" class="btn btn-primary" role="button">View Details</a> <a href="http://localhost:1634/Order/Create" class="btn btn-default" role="button">Click for Order</a></p>
+                </div>
+            </div>
+            Please Copy the Product Code for order
+
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="~/images/003.jpg" class="warning">
+                    <img src="~/images/003.jpg" class="img-thumbnail" alt="Responsive image">
+                </a>
+                @*<img src="~/images/001.jpg" />*@
+                <div class="caption">
+                    <h3>White Blazer</h3>
+                    <h3>Code M001 </h3>
+                    <h4>This product Imported from India </h4>
+                    <p> <h2 class="alert-success">Price 3000 Taka</h2></p>
+                    <p><a href="http://localhost:1634/mens/M003Details" class="btn btn-primary" role="button">View Details</a> <a href="http://localhost:1634/Order/Create" class="btn btn-default" role="button">Click for Order</a></p>
+                </div>
+            </div>
+            Please Copy the Product Code for order
+
+        </div>
+    </div>
+</table>

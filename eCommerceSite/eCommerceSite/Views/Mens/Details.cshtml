@@ -1,0 +1,18 @@
+﻿@model eCommerceSite.Models.MensProduct
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MensProduct</h4>
+	<hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MensProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
